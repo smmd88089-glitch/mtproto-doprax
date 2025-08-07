@@ -1,0 +1,11 @@
+name: MTProto Proxy
+
+services:
+  mtproto:
+    image: alexbers/mtproto-proxy
+    ports:
+      - 443:443
+    env:
+      - SECRET=${SECRET}
+      - TAG=${TAG}
+    restart: always
